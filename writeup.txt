@@ -1,0 +1,17 @@
+1. Name: Rose Wei
+
+2. Any aspects of my client or server code that are not working: N/A
+
+3. How I tested my code are working: I basically follow tha instruction code:
+        gcc -o prog2_server prog2_server.c trie.c
+        gcc -o prog2_client prog2_client.c
+        ./prog2_client 127.0.0.1 36801 (in a different terminal, player 1)
+        ./prog2_client 127.0.0.1 36801 (in a different terminal, player 2)
+
+        ./prog2_client 127.0.0.2 36802 (test for fork)
+        ./prog2_client 127.0.0.2 36802
+    and I played the game by entering word to observer it work like the spec, also not enter word to test for time limits.
+
+4. What was the most challenging aspect of this assignment, and why? The most challenging aspect of this assignment was handling multiple clients simultaneously (fork system call to create child processes for each pair clients). Also struggling for a long time for how to process the pair clients inside the fork.
+
+* I am having trouble on my laptop this week, so Professor give me 1 more day to finish this project.
